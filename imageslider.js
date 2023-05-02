@@ -28,8 +28,8 @@
         }, 5000);
 
         function prev() {
-            if (index <= 0) {
-                index = imageArr.length;
+            if (index == 0) {
+                index = imageArr.length-1;
                 image.src = imageArr[length];
                 index--;
             } else {
@@ -39,8 +39,8 @@
         }
 
         setInterval(() => {
-            if (index <= 0) {
-                index = imageArr.length;
+            if (index == 0) {
+                index = imageArr.length-1;
                 image.src = imageArr[length];
                 index--;
             } else {
